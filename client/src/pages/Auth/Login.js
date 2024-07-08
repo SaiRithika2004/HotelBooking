@@ -8,6 +8,15 @@ import { useNavigate } from 'react-router-dom'
 import { PageContainer } from '../../components/GlobalStyles/PageStyles'
 import Loader from "../../components/Loaders/Loader.js"
 import { toast } from 'react-toastify'
+import styled from 'styled-components'
+
+const Signature = styled.div`
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #aaa;
+`;
 
 const Login = () => {
 
@@ -83,8 +92,10 @@ const Login = () => {
                     </FormContainer>
                 ) : <Loader />}
             </AuthContainer>
+            <Signature>Developed by Ramakrishna, Rithika, Pragnya, and Bhuvana</Signature>
         </PageContainer>
     )
 }
 
 export default Login
+
