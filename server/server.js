@@ -18,7 +18,7 @@ mongoose.connect(mongoURL, {
     useUnifiedTopology: true
 })
 mongoose.connection.once('open', () => console.log("DB Connected..."))
-
+//app
 app.use("/graphql", graphqlHTTP({
     schema,
     graphiql: true
